@@ -1,12 +1,22 @@
 import Ember from 'ember';
 import ajax from 'ic-ajax';
+import config from 'mrt-ninja/config/environment';
 
 export default Ember.ObjectController.extend({
   fetchIncidents: function() {
     var lineId = this.get('id');
+
+    //TODO move this somewhere
+    var host = null;
+    if (config.environment === 'production') {
+      host = window.MrtNinja.HOST
+    } else if (config.environment === 'development') {
+      host = 'http://localhost:3000'
+    }
+
     if (lineId) {
       ajax({
-        url: 'http://128.199.87.40:49159/lines/'+ lineId +'/incidents',
+        url: host + '/lines/'+ lineId +'/incidents',
         type: 'GET',
         contentType: 'application/json',
       }).then(function(response) {
