@@ -2,7 +2,7 @@
 MBTA Ninja is a crowdsourced alerting system for public transit in Philippines.
 
 The project started as a weekend hack.
-The site is built using Ember.js and Materialize.css, and redis
+The site is built using Ember.js, node.js, Materialize.css and redis
 
 ## Contributing
 
