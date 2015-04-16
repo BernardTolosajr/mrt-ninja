@@ -6,10 +6,10 @@ The site is built using Ember.js and Materialize.css, and redis
 
 ## Contributing
 
-We welcome contributions that would make this tool more useful for the Philippines community -- whether it's adding support for more MBTA lines, or entire new features.
+We welcome contributions that would make this tool more useful for the Philippines community -- whether it's adding support for more MRT lines, or entire new features.
 
 Please create a GitHub issue if you have an idea. And if you're able to code a solution and open a pull request, even better!
 
 # License
 
-MBTA Ninja is released under the [MIT License](http://www.opensource.org/licenses/MIT)
+MRT Ninja is released under the [MIT License](http://www.opensource.org/licenses/MIT)
