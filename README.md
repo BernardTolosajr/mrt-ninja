@@ -1,6 +1,8 @@
 # MRT Ninja
 MRT Ninja is a crowdsourced alerting system for public transit in Philippines.
 
+View the site: mrt.ninja
+
 The project is a weekend hack.
 The site is built using Ember.js, node.js, Materialize.css and redis
 
