@@ -1,0 +1,43 @@
+{
+  "name": "simpleQuest",
+  "version": "1.0.0",
+  "description": "quest start now",
+  "main": "server.js",
+  "scripts": {
+    "test": "node `which gulp` test"
+  },
+  "author": "bt",
+  "license": "ISC",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "body-parser": "^1.12.0",
+    "cors": "^2.5.3",
+    "express": "^4.12.0",
+    "lodash": "^3.3.1",
+    "moment": "^2.9.0",
+    "mongoose": "^3.8.24",
+    "qs": "^2.4.1",
+    "redis": "^0.12.1"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "mocha": true
+    }
+  },
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.5.0",
+    "gulp-exit": "0.0.2",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nodemon": "^1.0.5",
+    "gulp-watch": "^4.1.1",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "supertest": "^0.15.0"
+  }
+}

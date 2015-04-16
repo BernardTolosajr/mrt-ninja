@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-content">
+    <i class="mdi-maps-directions-subway small"></i>
+    <span class="card-title activator grey-text text-darken-4">
+      {{line.name}} - <span class="grey-text">{{line.bound}}</span>
+    </span>
+    {{#link-to 'line'}}
+      <i class="mdi-navigation-arrow-back right"></i>
+    {{/link-to}}
+    <p>
+      {{yield}}
+    </p>
+  </div>
+</div>

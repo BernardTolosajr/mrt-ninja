@@ -1,0 +1,19 @@
+<dd class="pos-right clearfix">
+  {{station-circle name=color}}
+  {{#report-time name=color}}
+    {{ago report.createdAt}}
+  {{/report-time}}
+  <div class="events">
+    <span class="gray-text right">clearing in {{timeRemaining}} <i class="mdi-device-access-time"></i></span>
+    <div class="pull-left">
+      <img class="ninja-logo events-object img-rounded" src="/images/ninja.png" />
+    </div>
+    <div class="events-body">
+      {{report-title title=report.name name=color}}
+      <p>
+        <span class="gray-text"><a href="" class="grey-text"><i class="mdi-action-thumb-up"> </i>0 confirmations</a></span>
+        <span class="gray-text"><a href="" class="grey-text"><i class="mdi-image-tag-faces"> </i>0 clear</a></span>
+      </p>
+    </div>
+  </div>
+</dd>

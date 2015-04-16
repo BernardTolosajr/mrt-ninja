@@ -1,0 +1,42 @@
+<div class="intro-screen-content">
+  <div class="logo">
+    <img class="ninja-logo" src="/images/ninja.png" />
+    <h1 class="app-title">
+      MRT Ninja
+    </h1>
+    <h2 class="app-subtitle">
+      Waze on rails
+    </h2>
+  </div>
+  <ul>
+    <li>OUTSMARTING MRT, TOGETHER.</li>
+    <li>Get real-time help from fellow MRT riders.</li>
+   </ul>
+
+   <div class="collection">
+      {{#each itemController="line/line"}}
+        {{#link-to "line.stations" this
+          class="mrt-south collection-item grey-text"}}
+          <i class="mdi-maps-directions-subway subway-icon small"></i>
+          {{name}} - {{bound}}
+          {{#if totalIncidents}}
+            <span class="new badge red">{{totalIncidents}}</span>
+          {{/if}}
+        {{/link-to}}
+      {{/each}}
+   </div>
+
+  <div class="share-buttons">
+      {{facebook-button class="fb-share-button" data-href="http://MRT.ninja" data-layout="button_count"}}
+  </div>
+
+  <div class="credits">
+    Created by <a target="_blank" href="https://twitter.com/BernardTolosaJr">Bernard Tolosa Jr.</a> Inspired by
+    <a href="http://www.MBTA.ninja/" target="_blank">MBTA</a>,
+    Share the love
+    <a href="http://twitter.com/home?status=@mrt_ninja" target="_blank">tweet at us</a>
+    or
+    <a href="http://www.MBTA.ninja/" target="_blank">contribute on GitHub.</a>
+  </div>
+
+</div>

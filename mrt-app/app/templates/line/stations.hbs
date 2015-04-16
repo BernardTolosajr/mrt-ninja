@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class ="timeline">
+
+        {{station-header line=model}}
+
+        <div class="add-button-container">
+            <a class="btn-floating btn-large waves-effect waves-light red" 
+                {{action 'showModal' 'report-modal' model}}>
+                <i class="mdi-content-add"></i>
+            </a>
+        </div>
+
+        {{#each controller.stations itemController="station"}}
+          <dl>
+            {{station-title color=color name=name}}
+            {{#each incident in incidents}}
+              {{view 'incident-card' contentBinding="incident"}}
+            {{/each}}
+          </dl>
+        {{/each}}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{{outlet 'modal'}}
